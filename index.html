@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Raghav Sardhotra | AI/ML Engineer & Creative Technologist</title>
+  <meta name="description" content="Portfolio & GitHub Landing Page for Raghav Sardhotra - AI/ML Engineer, Creative Technologist, and Visual Designer proficient in Premiere Pro, After Effects, and Photoshop.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #0b0f19;
+      --card-bg: rgba(18, 24, 38, 0.7);
+      --card-border: rgba(255, 255, 255, 0.08);
+      --card-hover-border: rgba(99, 102, 241, 0.4);
+      --primary: #6366f1;
+      --primary-glow: rgba(99, 102, 241, 0.25);
+      --accent: #06b6d4;
+      --accent-glow: rgba(6, 182, 212, 0.25);
+      --text: #f3f4f6;
+      --text-muted: #9ca3af;
+      --font-main: 'Outfit', -apple-system, BlinkMacSystemFont, sans-serif;
+      --font-mono: 'JetBrains Mono', monospace;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: var(--bg);
+      color: var(--text);
+      font-family: var(--font-main);
+      line-height: 1.6;
+      overflow-x: hidden;
+      background-image: 
+        radial-gradient(circle at 15% 15%, rgba(99, 102, 241, 0.12) 0%, transparent 40%),
+        radial-gradient(circle at 85% 65%, rgba(6, 182, 212, 0.1) 0%, transparent 45%),
+        radial-gradient(circle at 50% 90%, rgba(139, 92, 246, 0.08) 0%, transparent 50%);
+      background-attachment: fixed;
+    }
+
+    .container {
+      max-width: 1080px;
+      margin: 0 auto;
+      padding: 40px 24px;
+    }
+
+    /* Hero Section */
+    .hero {
+      text-align: center;
+      padding: 60px 0 40px;
+      position: relative;
+    }
+
+    .status-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 6px 16px;
+      border-radius: 9999px;
+      background: rgba(99, 102, 241, 0.12);
+      border: 1px solid rgba(99, 102, 241, 0.3);
+      color: #818cf8;
+      font-size: 0.85rem;
+      font-weight: 500;
+      margin-bottom: 24px;
+    }
+
+    .status-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background-color: #10b981;
+      box-shadow: 0 0 10px #10b981;
+    }
+
+    .hero h1 {
+      font-size: clamp(2.5rem, 5vw, 4rem);
+      font-weight: 800;
+      letter-spacing: -0.03em;
+      line-height: 1.1;
+      margin-bottom: 16px;
+      background: linear-gradient(135deg, #ffffff 30%, #94a3b8 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .hero-gradient-text {
+      background: linear-gradient(135deg, #818cf8 0%, #38bdf8 50%, #c084fc 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .hero p {
+      font-size: 1.15rem;
+      color: var(--text-muted);
+      max-width: 680px;
+      margin: 0 auto 30px;
+    }
+
+    .social-links {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-bottom: 30px;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 10px 20px;
+      border-radius: 10px;
+      font-size: 0.95rem;
+      font-weight: 600;
+      text-decoration: none;
+      transition: all 0.25s ease;
+      cursor: pointer;
+    }
+
+    .btn-primary {
+      background: linear-gradient(135deg, #6366f1 0%, #4f46e5 100%);
+      color: #ffffff;
+      box-shadow: 0 4px 18px var(--primary-glow);
+      border: 1px solid rgba(255, 255, 255, 0.15);
+    }
+
+    .btn-primary:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 24px var(--primary-glow);
+    }
+
+    .btn-outline {
+      background: var(--card-bg);
+      color: var(--text);
+      border: 1px solid var(--card-border);
+      backdrop-filter: blur(10px);
+    }
+
+    .btn-outline:hover {
+      border-color: var(--card-hover-border);
+      transform: translateY(-2px);
+      background: rgba(30, 41, 59, 0.8);
+    }
+
+    /* Section Headers */
+    .section-title {
+      font-size: 1.75rem;
+      font-weight: 700;
+      margin-bottom: 24px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      letter-spacing: -0.02em;
+    }
+
+    .section-title span {
+      color: var(--primary);
+    }
+
+    /* Glass Cards */
+    .grid-2 {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 24px;
+      margin-bottom: 48px;
+    }
+
+    .grid-3 {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+      margin-bottom: 48px;
+    }
+
+    .card {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 16px;
+      padding: 28px;
+      backdrop-filter: blur(12px);
+      transition: all 0.3s ease;
+      position: relative;
+    }
+
+    .card:hover {
+      border-color: var(--card-hover-border);
+      transform: translateY(-4px);
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.35);
+    }
+
+    .card-icon {
+      font-size: 1.8rem;
+      margin-bottom: 16px;
+      display: inline-block;
+    }
+
+    .card h3 {
+      font-size: 1.25rem;
+      font-weight: 700;
+      margin-bottom: 10px;
+      color: #ffffff;
+    }
+
+    .card p {
+      color: var(--text-muted);
+      font-size: 0.95rem;
+      margin-bottom: 16px;
+    }
+
+    .tag-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: auto;
+    }
+
+    .tag {
+      font-family: var(--font-mono);
+      font-size: 0.75rem;
+      padding: 4px 10px;
+      border-radius: 6px;
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      color: #94a3b8;
+    }
+
+    .tag.primary {
+      background: rgba(99, 102, 241, 0.15);
+      border-color: rgba(99, 102, 241, 0.3);
+      color: #a5b4fc;
+    }
+
+    .tag.creative {
+      background: rgba(244, 63, 94, 0.15);
+      border-color: rgba(244, 63, 94, 0.3);
+      color: #fda4af;
+    }
+
+    /* Creative Spotlight Section */
+    .creative-banner {
+      background: linear-gradient(135deg, rgba(99, 102, 241, 0.1) 0%, rgba(244, 63, 94, 0.1) 100%);
+      border: 1px solid rgba(99, 102, 241, 0.2);
+      border-radius: 20px;
+      padding: 36px;
+      margin-bottom: 48px;
+      backdrop-filter: blur(14px);
+    }
+
+    .creative-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+      margin-top: 24px;
+    }
+
+    .creative-item {
+      background: rgba(0, 0, 0, 0.25);
+      padding: 20px;
+      border-radius: 12px;
+      border: 1px solid rgba(255, 255, 255, 0.05);
+    }
+
+    .creative-item h4 {
+      font-size: 1.05rem;
+      font-weight: 600;
+      color: #ffffff;
+      margin-bottom: 6px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .creative-item p {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      margin-bottom: 0;
+    }
+
+    /* Footer Section */
+    .footer-section {
+      margin-top: 60px;
+      text-align: center;
+    }
+
+    .banner-container {
+      width: 100%;
+      border-radius: 16px;
+      overflow: hidden;
+      border: 1px solid var(--card-border);
+      box-shadow: 0 16px 40px rgba(0, 0, 0, 0.4);
+      margin-bottom: 24px;
+      position: relative;
+    }
+
+    .banner-container img {
+      width: 100%;
+      height: auto;
+      display: block;
+      transition: transform 0.5s ease;
+    }
+
+    .banner-container:hover img {
+      transform: scale(1.02);
+    }
+
+    .footer-quote {
+      font-size: 0.95rem;
+      color: var(--text-muted);
+      font-style: italic;
+      margin-bottom: 12px;
+    }
+
+    .footer-credits {
+      font-size: 0.85rem;
+      color: #64748b;
+    }
+
+    @media (max-width: 640px) {
+      .container {
+        padding: 24px 16px;
+      }
+      .card {
+        padding: 20px;
+      }
+      .creative-banner {
+        padding: 24px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <!-- Header / Hero -->
+    <header class="hero">
+      <div class="status-badge">
+        <span class="status-dot"></span> Available for AI/ML & Creative Tech Collaborations
+      </div>
+      <h1>Raghav <span class="hero-gradient-text">Sardhotra</span></h1>
+      <p>
+        Computer Science Undergrad @ MIET Jammu. Engineering intelligent systems with rigorous machine learning under the hood, and crafting cinematic visual media on screen.
+      </p>
+
+      <div class="social-links">
+        <a href="https://github.com/RghavSrdhtra" class="btn btn-outline" target="_blank" rel="noreferrer">
+          <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+          GitHub
+        </a>
+        <a href="https://linkedin.com/in/raghav-sardhotra-40ab5b349" class="btn btn-outline" target="_blank" rel="noreferrer">
+          <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+          LinkedIn
+        </a>
+        <a href="mailto:rsardhotra@gmail.com" class="btn btn-primary">
+          <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+          Email Me
+        </a>
+      </div>
+    </header>
+
+    <!-- Creative Craftsmanship Spotlight -->
+    <section class="creative-banner">
+      <h2 class="section-title"><span>✦</span> Creative Media & Visual Design</h2>
+      <p style="color: var(--text-muted); font-size: 1rem;">
+        Great engineering requires exceptional communication. With a deep foundation in digital aesthetics and high-end video/image production, I blend technical depth with storytelling that resonates.
+      </p>
+
+      <div class="creative-grid">
+        <div class="creative-item">
+          <h4>🎞️ Premiere Pro</h4>
+          <p>Long-form & short-form narrative pacing, multi-track audio soundscapes, and color grading.</p>
+        </div>
+        <div class="creative-item">
+          <h4>✨ After Effects</h4>
+          <p>Kinetic typography, motion graphics, compositing, visual effects, and fluid micro-animations.</p>
+        </div>
+        <div class="creative-item">
+          <h4>🎨 Photoshop</h4>
+          <p>Raster illustration, image manipulation, concept thumbnails, and branding visual assets.</p>
+        </div>
+        <div class="creative-item">
+          <h4>📐 Figma & UI Design</h4>
+          <p>Dark-mode glassmorphic design systems, responsive component libraries, and spatial balance.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Projects -->
+    <section>
+      <h2 class="section-title"><span>🚀</span> Featured Projects</h2>
+      <div class="grid-2">
+        <!-- NexCommand -->
+        <div class="card">
+          <div class="card-icon">🚨</div>
+          <h3>NexCommand</h3>
+          <p>
+            Rapid Crisis Response Platform acting as a central control tower. Ingests simulated emergency reports, matches resources in real-time, and generates automated situation briefs using the <b>Google Gemini AI API</b> wrapped in a dark-mode glassmorphic command center.
+          </p>
+          <div class="tag-container">
+            <span class="tag primary">Gemini Flash API</span>
+            <span class="tag">JavaScript</span>
+            <span class="tag">Glassmorphism</span>
+            <span class="tag">Vite</span>
+          </div>
+        </div>
+
+        <!-- SilkSphere -->
+        <div class="card">
+          <div class="card-icon">🌿</div>
+          <h3>SilkSphere</h3>
+          <p>
+            Smart Sericulture Ecosystem. Deploys multi-modal IoT sensor telemetry for environmental tracking and an engineered <b>PyTorch CNN</b> for early-stage silkworm disease classification and automated cocoon grading with a farmer React dashboard.
+          </p>
+          <div class="tag-container">
+            <span class="tag primary">PyTorch</span>
+            <span class="tag primary">Computer Vision</span>
+            <span class="tag">IoT / MQTT</span>
+            <span class="tag">React 18</span>
+          </div>
+        </div>
+
+        <!-- Multimodal DL -->
+        <div class="card">
+          <div class="card-icon">🧬</div>
+          <h3>Multimodal DL Classification</h3>
+          <p>
+            Modular deep learning framework in PyTorch designed for late-fusion of heterogeneous data streams (combining image matrices and textual metadata) with scalable Pandas/NumPy preprocessing and interactive Plotly telemetry.
+          </p>
+          <div class="tag-container">
+            <span class="tag primary">Deep Learning</span>
+            <span class="tag">PyTorch</span>
+            <span class="tag">Data Fusion</span>
+            <span class="tag">Plotly</span>
+          </div>
+        </div>
+
+        <!-- Generative & Audio Intelligence -->
+        <div class="card">
+          <div class="card-icon">🎙️</div>
+          <h3>GenAI & Speech Suite</h3>
+          <p>
+            Custom <b>ComfyUI</b> generative image/video synthesis workflows alongside localized Whisper AI transcription and Text-To-Speech pipelines, engineered for high-throughput media generation and analysis.
+          </p>
+          <div class="tag-container">
+            <span class="tag creative">ComfyUI</span>
+            <span class="tag creative">Whisper AI</span>
+            <span class="tag">Python</span>
+            <span class="tag">Audio DSP</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Technical Stack & Tooling -->
+    <section>
+      <h2 class="section-title"><span>⚙️</span> Technical Arsenal</h2>
+      <div class="grid-3">
+        <div class="card">
+          <div class="card-icon">💻</div>
+          <h3>Languages & Core</h3>
+          <p>Python, C, C++, JavaScript (ES6+), HTML5, CSS3, SQL</p>
+          <div class="tag-container">
+            <span class="tag">Python</span>
+            <span class="tag">C++</span>
+            <span class="tag">JS</span>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-icon">🧠</div>
+          <h3>Machine Learning</h3>
+          <p>PyTorch, TensorFlow, CNNs, Multimodal Architectures, Pandas, NumPy, OpenCV</p>
+          <div class="tag-container">
+            <span class="tag primary">PyTorch</span>
+            <span class="tag primary">TF</span>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-icon">🛡️</div>
+          <h3>Security & Ops</h3>
+          <p>Google Cybersecurity Certified, Cisco SOC Operations, Docker, UiPath RPA, Wireshark, Git</p>
+          <div class="tag-container">
+            <span class="tag">Docker</span>
+            <span class="tag">Wireshark</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer Banner Section -->
+    <footer class="footer-section">
+      <div class="banner-container">
+        <img src="./657657.jpg" alt="Holo the Wise Wolf Shadow Silhouette" />
+      </div>
+      <p class="footer-quote">
+        🐺 "Wisdom in code, artistry in motion." — Raghav Sardhotra
+      </p>
+      <p class="footer-credits">
+        Designed & Built by Raghav Sardhotra • Jammu, India • <a href="https://github.com/RghavSrdhtra" style="color: var(--primary); text-decoration: none;">github.com/RghavSrdhtra</a>
+      </p>
+    </footer>
+  </div>
+
+</body>
+</html>
