@@ -4,16 +4,12 @@
 <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=1,9,20,24&height=220&section=header&text=Hey,%20I'm%20Raghav%20Sardhotra%20✦&fontSize=38&fontAlignY=38&desc=AI%2FML%20Engineer%20•%20Creative%20Technologist%20•%20Visual%20Designer&descFontSize=18&descAlignY=62&fontColor=ffffff" width="100%" alt="Raghav Sardhotra Header"/>
 
 <p align="center">
-  <a href="https://linkedin.com/in/raghav-sardhotra-40ab5b349">
-    <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
-  </a>
   <a href="mailto:rsardhotra@gmail.com">
     <img src="https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" />
   </a>
   <a href="https://github.com/RghavSrdhtra">
     <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" />
   </a>
-  <img src="https://img.shields.io/badge/Location-Jammu%2C%20India-555555?style=for-the-badge&logo=google-maps&logoColor=white" alt="Location" />
 </p>
 
 <p align="center">
@@ -26,7 +22,7 @@
 
 ## 🌌 About Me
 
-I am a Computer Science undergraduate (B.Tech '27 at MIET Jammu) working at the intersection of **Artificial Intelligence**, **Edge Systems**, and **High-Fidelity Visual Media**. 
+I am a Computer Science undergraduate (B.Tech '27) working at the intersection of **Artificial Intelligence**, **Edge Systems**, and **High-Fidelity Visual Media**. 
 
 I believe code is only half the story — the craft lies in creating systems that not only compute with precision but communicate with elegance. Whether it's architecting real-time emergency dispatch control towers, training neural networks for automated agricultural intelligence, or producing motion graphics with frame-by-frame precision, I obsess over both the logic under the hood and the visual harmony on screen.
 
@@ -202,9 +198,6 @@ Whether you want to discuss AI/ML architectures, collaborate on an open-source p
 
 <a href="mailto:rsardhotra@gmail.com">
   <img src="https://img.shields.io/badge/Email-rsardhotra%40gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Gmail"/>
-</a>
-<a href="https://linkedin.com/in/raghav-sardhotra-40ab5b349">
-  <img src="https://img.shields.io/badge/LinkedIn-Raghav%20Sardhotra-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/>
 </a>
 <a href="https://github.com/RghavSrdhtra">
   <img src="https://img.shields.io/badge/GitHub-@RghavSrdhtra-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"/>
