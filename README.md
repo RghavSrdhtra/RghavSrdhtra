@@ -70,15 +70,6 @@ A PyTorch framework built to process and classify multimodal data streams.
 
 ---
 
-## GitHub Stats
-
-<div align="center">
-  <img src="https://github-readme-stats-sigma-five.vercel.app/api?username=RghavSrdhtra&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=58a6ff&icon_color=79c0ff&text_color=c9d1d9" height="165" alt="GitHub Stats" />
-  <img src="https://github-readme-stats-sigma-five.vercel.app/api/top-langs/?username=RghavSrdhtra&layout=compact&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=58a6ff&text_color=c9d1d9" height="165" alt="Top Languages" />
-</div>
-
----
-
 <div align="center">
   <img src="./657657.jpg" width="100%" alt="Footer Banner" />
 </div>
