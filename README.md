@@ -2,15 +2,6 @@
 
 <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=1,9,20,24&height=200&section=header&text=Raghav%20Sardhotra&fontSize=38&fontAlignY=40&desc=Machine%20Learning%20%E2%80%A2%20Vision%20%E2%80%A2%20Creative%20Media&descFontSize=16&descAlignY=64&fontColor=ffffff" width="100%" alt="Raghav Sardhotra Header"/>
 
-<p align="center">
-  <a href="mailto:rsardhotra@gmail.com">
-    <img src="https://img.shields.io/badge/Email-rsardhotra%40gmail.com-EA4335?style=flat-square&logo=gmail&logoColor=white" alt="Email" />
-  </a>
-  <a href="https://github.com/RghavSrdhtra">
-    <img src="https://img.shields.io/badge/GitHub-RghavSrdhtra-181717?style=flat-square&logo=github&logoColor=white" alt="GitHub" />
-  </a>
-</p>
-
 </div>
 
 ## About Me
@@ -87,14 +78,6 @@ A PyTorch framework built to process and classify multimodal data streams.
 </div>
 
 ---
-
-## Contact
-
-If you want to collaborate on a project, talk about vision models, or discuss video/motion design:
-- Email: [rsardhotra@gmail.com](mailto:rsardhotra@gmail.com)
-- GitHub: [@RghavSrdhtra](https://github.com/RghavSrdhtra)
-
-<br/>
 
 <div align="center">
   <img src="./657657.jpg" width="100%" alt="Footer Banner" />
